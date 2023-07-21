@@ -231,7 +231,11 @@ body {
   margin-bottom: 16px;
 }
 .footer-subscribe {
-  margin-left: 96px;
+  margin-left: 80px;
+}
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
 }
 .footer-input {
   border-radius: 4px;
@@ -241,16 +245,53 @@ body {
   height: 40px;
   background-color: transparent;
   padding: 8px 16px;
-  margin-right: 24px;
+  outline: transparent;
+  color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .footer-input::placeholder {
   color: #fff;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
+.footer-input:focus::placeholder {
+  opacity: 0;
+}
+.footer-form-btn {
+  padding: 8px 24px 8px 16px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  background: var(--color-logo);
+  border: none;
+  max-width: 165px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-cont-icon {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+
 /** ------------- MAIN PAGE ------------**/
 
 /** ------Hero ------ **/
