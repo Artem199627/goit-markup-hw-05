@@ -773,9 +773,45 @@ body {
   outline: transparent;
   resize: none;
 }
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+}
 .modal-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.04em;
+}
+.check-text {
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+}
+.privacy-link {
+  color: var(--color-logo);
+  text-decoration-line: underline;
+}
+.check-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.checkbox {
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
