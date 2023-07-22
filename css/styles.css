@@ -766,6 +766,9 @@ body {
   position: relative;
   margin-bottom: 8px;
 }
+.modal-container-text {
+  margin-bottom: 16px;
+}
 .modal-textarea {
   font-size: 12px;
   line-height: 1.17;
