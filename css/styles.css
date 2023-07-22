@@ -238,9 +238,9 @@ body {
   gap: 24px;
 }
 .footer-input {
+  font-size: 12px;
   border-radius: 4px;
   border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 264px;
   height: 40px;
   background-color: transparent;
@@ -249,6 +249,7 @@ body {
   color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-input::placeholder {
   color: #fff;
@@ -272,7 +273,7 @@ body {
   border-radius: 4px;
   background: var(--color-logo);
   border: none;
-  max-width: 165px;
+  min-width: 165px;
   height: 40px;
   cursor: pointer;
   display: flex;
@@ -771,6 +772,7 @@ body {
   background-color: transparent;
   outline: transparent;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:focus {
   border-color: #4d5ae5;
@@ -802,6 +804,9 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-check:checked + .check-text span {
@@ -819,7 +824,7 @@ body {
   height: 56px;
   border-radius: 4px;
   background: #4d5ae5;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
